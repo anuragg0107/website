@@ -1,0 +1,47 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+  }
+  
+  .box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box h5 {
+    margin-top: 10px;
+    color: #000;
+  }
+  
+  .box p {
+    color: #707070;
+  }
+  
+  .box span {
+    margin-left: 5px;
+    color: #e80566;
+  }
+  
+  @media (max-width: 767.98px) {
+    .swiper-slide img {
+      width: 100%; 
+    }
+  }
+  
