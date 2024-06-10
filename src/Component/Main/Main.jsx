@@ -93,15 +93,15 @@ const Main = () => {
         <Row className="text-center" style={{
             marginTop:"20px"
         }}>
-          {services.map((service, index) => (
+          {services.map((el, index) => (
             <Col key={index} xs={12} md={4} className="mb-4">
               <div className="box">
                 <FontAwesomeIcon
-                  icon={service.icon}
+                  icon={el.icon}
                   style={{ color: "#e80566", height: "40px", width: "40px" }}
                 />
-                <h5>{service.title}</h5>
-                <p>{service.description}</p>
+                <h5>{el.title}</h5>
+                <p>{el.description}</p>
                 <p>
                   Read More
                   <span>
