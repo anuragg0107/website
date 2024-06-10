@@ -4,6 +4,7 @@ import Main from "./Component/Main/Main";
 import Navbar from "./Component/Navbar/Navbar";
 import { Spinner } from "react-bootstrap";
 import "./Loader.css";
+import ScrollToTopButton from "./Component/ScrollToTop/ScrollToTop";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -25,6 +26,7 @@ function App() {
           <Navbar />
           <Main />
           <Footer />
+          <ScrollToTopButton />
         </>
       )}
     </>
