@@ -1,0 +1,9 @@
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e80566; 
+    color: #fff;
+    height: 100vh; 
+  }
+  
