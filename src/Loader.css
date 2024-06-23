@@ -1,9 +1,54 @@
 .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e80566; 
-    color: #fff;
-    height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #683f51; 
+  color: #fff;
+  height: 100vh; 
+}
+
+.loading-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo-part {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  margin: 5px;
+  animation: bounce 1.2s infinite;
+}
+
+.part1 {
+  animation-delay: -0.4s;
+}
+
+.part2 {
+  animation-delay: -0.2s;
+}
+
+.part3 {
+  animation-delay: 0s;
+}
+
+.part4 {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './Navbar.css';
+import logo from "../../Assests/Image/globalinfotech.png";
 
 const NavbarComponent = () => {
   return (
@@ -37,10 +38,11 @@ const NavbarComponent = () => {
       <Navbar style={{paddingLeft:"10px",paddingRight:"10px"}} expand="lg">
           <Navbar.Brand href="/">
             <Image
-              src="http://sarkaarinfotech.com/sarkaar_files/logo-color.png"
+              src={logo}
               alt="logo"
-              width="100"
-              height="30"
+              width="80"
+              height="70"
+              style={{borderRadius:"10px"}}
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,0 +1,60 @@
+h2{
+    text-align: center;
+}
+.aboutus {
+    animation: updown 2s infinite;
+    display: inline-block;
+  }
+  
+  h2 span {
+    color: #e80566;
+  }
+  
+  @keyframes updown {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+  .desc {
+    font-size: 14px;
+    color: #333333;
+    padding-top: 15px;
+    text-align: center;
+  }
+  
+  .impact-container {
+    text-align: center; 
+    padding-top: 14px; 
+  }
+  
+  .impact {
+    border-bottom: 1px solid gray;
+    padding-bottom: 14px;
+    display: inline-block;
+  }
+  
+
+  .smalldesc{
+    text-align: center;
+    color: #2b2b2b;
+    font-size: 13px;
+  }
+
+.box{
+    background-color: #fff;
+}
+.box p{
+    font-size: 13px;
+    color: #7c7c7c;
+}
+.box:hover h5{
+    transition: all 0.3s linear 0s;;
+    color: #e80566;
+}

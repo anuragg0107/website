@@ -3,11 +3,15 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper/modules";
-import image1 from "../../Assests/Image/image1.png";
-import image2 from "../../Assests/Image/image2.png";
+import "swiper/css/autoplay";
+import { Pagination, Autoplay } from "swiper/modules";
+import image1 from "../../Assests/Image/softwaredevelopment.png";
+import image2 from "../../Assests/Image/webdevelopment.jpg";
+import image3 from "../../Assests/Image/appdevelopment.jpg";
+import image4 from "../../Assests/Image/digitalmarketing.jpg";
+import image5 from "../../Assests/Image/d.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleRight,
@@ -60,22 +64,33 @@ const Main = () => {
   return (
     <>
       <Swiper
-        slidesPerView={1}
         spaceBetween={30}
-        loop={true}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
+       <SwiperSlide>
+          {" "}
+          <Image src={image5} />
+        </SwiperSlide>
         <SwiperSlide>
           {" "}
           <Image src={image1} />
         </SwiperSlide>
         <SwiperSlide>
           <Image src={image2} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={image3} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image src={image4} />
         </SwiperSlide>
       </Swiper>
       <Container style={{ marginTop: "20px" }}>
@@ -86,13 +101,26 @@ const Main = () => {
         <h4
           style={{ textAlign: "center", color: "#707070", fontWeight: "400" }}
         >
-          Efficiently aggregate end-to-end core competencies without
-          maintainable ideas. Dynamically foster tactical solutions without
-          enabled value.
+          Let's do something different together, let's do business together,
+          stand out from the crowd, create your new identity, in which our
+          globalinfotech team will support{" "}
+          <span
+            style={{
+              borderBottom: "2px solid red",
+              paddingBottom: "4px",
+              paddingLeft: "5px",
+            }}
+          >
+            you all{" "}
+          </span>{" "}
+          the time
         </h4>
-        <Row className="text-center" style={{
-            marginTop:"20px"
-        }}>
+        <Row
+          className="text-center"
+          style={{
+            marginTop: "20px",
+          }}
+        >
           {services.map((el, index) => (
             <Col key={index} xs={12} md={4} className="mb-4">
               <div className="box">
